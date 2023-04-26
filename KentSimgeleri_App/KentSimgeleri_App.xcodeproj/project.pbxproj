@@ -13,6 +13,9 @@
 		5FDDA54C29F93A2400C1BF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDDA54A29F93A2400C1BF31 /* Main.storyboard */; };
 		5FDDA54E29F93A2400C1BF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FDDA54D29F93A2400C1BF31 /* Assets.xcassets */; };
 		5FDDA55129F93A2400C1BF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDDA54F29F93A2400C1BF31 /* LaunchScreen.storyboard */; };
+		5FDDA55929F93B4A00C1BF31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDDA55829F93B4A00C1BF31 /* DetailViewController.swift */; };
+		5FDDA55E29F93C2700C1BF31 /* KentSimgeleriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDDA55D29F93C2700C1BF31 /* KentSimgeleriTableViewCell.swift */; };
+		5FDDA56029F93E6E00C1BF31 /* KentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDDA55F29F93E6E00C1BF31 /* KentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5FDDA54D29F93A2400C1BF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FDDA55029F93A2400C1BF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FDDA55229F93A2400C1BF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FDDA55829F93B4A00C1BF31 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5FDDA55D29F93C2700C1BF31 /* KentSimgeleriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KentSimgeleriTableViewCell.swift; sourceTree = "<group>"; };
+		5FDDA55F29F93E6E00C1BF31 /* KentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		5FDDA54329F93A2400C1BF31 /* KentSimgeleri_App */ = {
 			isa = PBXGroup;
 			children = (
+				5FDDA55C29F93BD700C1BF31 /* CellDesign */,
+				5FDDA55B29F93BC100C1BF31 /* ViewControllers */,
+				5FDDA55A29F93BB200C1BF31 /* Model */,
 				5FDDA54429F93A2400C1BF31 /* AppDelegate.swift */,
 				5FDDA54629F93A2400C1BF31 /* SceneDelegate.swift */,
 				5FDDA54829F93A2400C1BF31 /* ViewController.swift */,
@@ -65,6 +74,30 @@
 				5FDDA55229F93A2400C1BF31 /* Info.plist */,
 			);
 			path = KentSimgeleri_App;
+			sourceTree = "<group>";
+		};
+		5FDDA55A29F93BB200C1BF31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FDDA55F29F93E6E00C1BF31 /* KentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FDDA55B29F93BC100C1BF31 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FDDA55829F93B4A00C1BF31 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5FDDA55C29F93BD700C1BF31 /* CellDesign */ = {
+			isa = PBXGroup;
+			children = (
+				5FDDA55D29F93C2700C1BF31 /* KentSimgeleriTableViewCell.swift */,
+			);
+			path = CellDesign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDDA55E29F93C2700C1BF31 /* KentSimgeleriTableViewCell.swift in Sources */,
 				5FDDA54929F93A2400C1BF31 /* ViewController.swift in Sources */,
 				5FDDA54529F93A2400C1BF31 /* AppDelegate.swift in Sources */,
 				5FDDA54729F93A2400C1BF31 /* SceneDelegate.swift in Sources */,
+				5FDDA55929F93B4A00C1BF31 /* DetailViewController.swift in Sources */,
+				5FDDA56029F93E6E00C1BF31 /* KentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
