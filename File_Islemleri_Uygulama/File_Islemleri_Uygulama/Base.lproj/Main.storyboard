@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="File_Islemleri_Uygulama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-Ct-ASD">
+                                <rect key="frame" x="40" y="79" width="313" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWi-X6-Zsp">
+                                <rect key="frame" x="52" y="136" width="52" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yaz"/>
+                                <connections>
+                                    <action selector="yaz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5a-RH-o1I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7N-c1-3gD">
+                                <rect key="frame" x="169" y="136" width="55" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Oku"/>
+                                <connections>
+                                    <action selector="oku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCC-ob-oQc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hV-E2-0Cu">
+                                <rect key="frame" x="294" y="136" width="43" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil"/>
+                                <connections>
+                                    <action selector="sil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZNE-Cp-Q60"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-c1-FDk">
+                                <rect key="frame" x="14" y="193" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim Kaydet"/>
+                                <connections>
+                                    <action selector="resimKaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guq-cl-YZ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWe-WJ-slO">
+                                <rect key="frame" x="134" y="193" width="126" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim Goster"/>
+                                <connections>
+                                    <action selector="resimGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ge-YY-MII"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHE-mi-QAU">
+                                <rect key="frame" x="269" y="193" width="93" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim Sil"/>
+                                <connections>
+                                    <action selector="resimSil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPu-hY-KwQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim" translatesAutoresizingMaskIntoConstraints="NO" id="FAe-Jx-Ad7">
+                                <rect key="frame" x="20" y="264" width="353" height="546"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="353" id="9N7-kH-IW0"/>
+                                    <constraint firstAttribute="height" constant="546" id="Klb-XO-L31"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6hV-E2-0Cu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="G7N-c1-3gD" secondAttribute="trailing" constant="8" symbolic="YES" id="5VG-S3-GC6"/>
+                            <constraint firstItem="Wz5-c1-FDk" firstAttribute="top" secondItem="sWi-X6-Zsp" secondAttribute="bottom" constant="22" id="5be-Og-gIb"/>
+                            <constraint firstItem="gHE-mi-QAU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wz5-c1-FDk" secondAttribute="trailing" constant="8" symbolic="YES" id="79W-A8-guy"/>
+                            <constraint firstItem="FAe-Jx-Ad7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8eP-l0-rLa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6hV-E2-0Cu" secondAttribute="trailing" constant="56" id="A9f-0T-uRd"/>
+                            <constraint firstItem="6hV-E2-0Cu" firstAttribute="top" secondItem="wPm-Ct-ASD" secondAttribute="bottom" constant="23" id="MVv-CR-Q6K"/>
+                            <constraint firstItem="sWi-X6-Zsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="QE7-AQ-kQp"/>
+                            <constraint firstItem="sWi-X6-Zsp" firstAttribute="top" secondItem="wPm-Ct-ASD" secondAttribute="bottom" constant="23" id="RUa-rb-XT9"/>
+                            <constraint firstItem="RWe-WJ-slO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="Rm5-TC-AD0"/>
+                            <constraint firstItem="G7N-c1-3gD" firstAttribute="leading" secondItem="sWi-X6-Zsp" secondAttribute="trailing" constant="65" id="Vnd-RS-IZ2"/>
+                            <constraint firstItem="FAe-Jx-Ad7" firstAttribute="top" secondItem="Wz5-c1-FDk" secondAttribute="bottom" constant="36" id="WL7-CK-s2h"/>
+                            <constraint firstItem="gHE-mi-QAU" firstAttribute="top" secondItem="6hV-E2-0Cu" secondAttribute="bottom" constant="22" id="Y6f-ei-DYV"/>
+                            <constraint firstItem="wPm-Ct-ASD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Z2Q-Xu-Lbi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FAe-Jx-Ad7" secondAttribute="trailing" constant="20" id="f2H-4y-Lab"/>
+                            <constraint firstItem="G7N-c1-3gD" firstAttribute="top" secondItem="wPm-Ct-ASD" secondAttribute="bottom" constant="23" id="frm-wP-ZiR"/>
+                            <constraint firstItem="wPm-Ct-ASD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hMl-0e-E2z"/>
+                            <constraint firstItem="gHE-mi-QAU" firstAttribute="leading" secondItem="RWe-WJ-slO" secondAttribute="trailing" constant="9" id="hp8-tI-73Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gHE-mi-QAU" secondAttribute="trailing" constant="31" id="iC7-kk-Hz6"/>
+                            <constraint firstItem="Wz5-c1-FDk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="kiD-14-LVW"/>
+                            <constraint firstItem="RWe-WJ-slO" firstAttribute="top" secondItem="G7N-c1-3gD" secondAttribute="bottom" constant="22" id="lKv-sq-eS3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wPm-Ct-ASD" secondAttribute="trailing" constant="40" id="vcw-td-PZk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resimTutucu" destination="FAe-Jx-Ad7" id="l42-xe-fGK"/>
+                        <outlet property="textFieldGirdi" destination="wPm-Ct-ASD" id="FMp-JL-l47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="resim" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
