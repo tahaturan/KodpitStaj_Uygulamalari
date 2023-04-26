@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+
+    
     //Views
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -29,9 +31,24 @@ class ViewController: UIViewController {
     var counter = 0
     var kennyArray = [UIImageView]()
     var hideTimer = Timer()
+    var highScore = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //highScore Check
+        
+        let storedHighScore = UserDefaults.standard.object(forKey: "highscore")
+        
+        if storedHighScore == nil{
+            highScore = 0
+            highScoreLabel.text = "Highscore: \(highScore)"
+        }
+        
+        if let newScore = storedHighScore as? Int {
+            highScore = newScore
+            highScoreLabel.text = "Highscore: \(highScore)"
+        }
         
         scoreLabel.text = "Score: \(score)"
         
@@ -107,6 +124,15 @@ class ViewController: UIViewController {
            for kenny in kennyArray {
                kenny.isHidden = true
            }
+           
+           //HighScore
+           if self.score > self.highScore{
+               self.highScore = self.score
+               highScoreLabel.text = "HighScore: \(self.highScore)"
+               
+               UserDefaults.standard.set(self.highScore, forKey: "highscore")
+           }
+           
            
            //Alert
            let alert = UIAlertController(title: "Time s Up", message: "Do you want to play again", preferredStyle: .alert)
