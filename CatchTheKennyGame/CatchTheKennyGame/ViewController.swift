@@ -9,11 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Views
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
-    
-    
     @IBOutlet weak var kenny1: UIImageView!
     @IBOutlet weak var kenny2: UIImageView!
     @IBOutlet weak var kenny3: UIImageView!
@@ -24,13 +23,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var kenny8: UIImageView!
     @IBOutlet weak var kenny9: UIImageView!
     
+    //Variables
     var score = 0
+    var timer = Timer()
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scoreLabel.text = "Score: \(score)"
         
+        //Images
         kenny1.isUserInteractionEnabled = true
         kenny2.isUserInteractionEnabled = true
         kenny3.isUserInteractionEnabled = true
@@ -61,6 +64,13 @@ class ViewController: UIViewController {
         kenny7.addGestureRecognizer(recognizer7)
         kenny8.addGestureRecognizer(recognizer8)
         kenny9.addGestureRecognizer(recognizer9)
+        
+        //Timers
+        
+        counter = 30
+        timeLabel.text = String(counter)
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
 
         
         
@@ -70,6 +80,27 @@ class ViewController: UIViewController {
         score += 1
         
         scoreLabel.text = "Score: \(score)"
+    }
+    
+   @objc func countDown()  {
+        counter -= 1
+       timeLabel.text = String(counter)
+       
+       if counter == 0 {
+           timer.invalidate()
+           
+           //Alert
+           let alert = UIAlertController(title: "Time s Up", message: "Do you want to play again", preferredStyle: .alert)
+           let okButton = UIAlertAction(title: "Ok", style: .cancel)
+           let replayButton = UIAlertAction(title: "Reaplay", style: .default) { UIAlertAction in
+               //Replay Function
+           }
+           alert.addAction(okButton)
+           alert.addAction(replayButton)
+           
+           self.present(alert, animated: true)
+           
+       }
     }
 
 }
