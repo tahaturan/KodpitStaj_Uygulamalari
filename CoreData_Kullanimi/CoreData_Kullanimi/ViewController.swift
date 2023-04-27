@@ -18,7 +18,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        veriKaydi()
+       // veriKaydi()
+        
+        veriOkuma()
+        print("------------------")
+       // veriSil()
+        
+        veriGuncelle()
         
         veriOkuma()
     }
@@ -42,6 +48,21 @@ class ViewController: UIViewController {
         for k in kisilerListe{
             print("Ad: \(k.kisiAd ?? "") Yas: \(k.kisiYas)")
         }
+    }
+    
+    func veriSil()  {
+        let kisi = kisilerListe[0]
+        context.delete(kisi)
+        appDelegate.saveContext()
+    }
+    
+    func veriGuncelle()  {
+        let kisi = kisilerListe[0]
+        
+        kisi.kisiAd = "Yeni Taha"
+        kisi.kisiYas = 99
+        
+        appDelegate.saveContext()
     }
 
 }
