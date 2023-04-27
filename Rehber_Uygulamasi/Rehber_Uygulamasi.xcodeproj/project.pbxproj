@@ -17,6 +17,10 @@
 		5F3E215129FA944600C13736 /* Rehber_UygulamasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E215029FA944600C13736 /* Rehber_UygulamasiTests.swift */; };
 		5F3E215B29FA944600C13736 /* Rehber_UygulamasiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E215A29FA944600C13736 /* Rehber_UygulamasiUITests.swift */; };
 		5F3E215D29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E215C29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift */; };
+		5F3E216B29FA957200C13736 /* KisiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E216A29FA957200C13736 /* KisiTableViewCell.swift */; };
+		5F3E216E29FA975900C13736 /* KisiEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E216D29FA975900C13736 /* KisiEkleViewController.swift */; };
+		5F3E217029FA977000C13736 /* KisiGuncelleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E216F29FA977000C13736 /* KisiGuncelleViewController.swift */; };
+		5F3E217229FA978000C13736 /* KisiDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E217129FA978000C13736 /* KisiDetayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		5F3E215629FA944600C13736 /* Rehber_UygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rehber_UygulamasiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3E215A29FA944600C13736 /* Rehber_UygulamasiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehber_UygulamasiUITests.swift; sourceTree = "<group>"; };
 		5F3E215C29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehber_UygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F3E216A29FA957200C13736 /* KisiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiTableViewCell.swift; sourceTree = "<group>"; };
+		5F3E216D29FA975900C13736 /* KisiEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiEkleViewController.swift; sourceTree = "<group>"; };
+		5F3E216F29FA977000C13736 /* KisiGuncelleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiGuncelleViewController.swift; sourceTree = "<group>"; };
+		5F3E217129FA978000C13736 /* KisiDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		5F3E213529FA944500C13736 /* Rehber_Uygulamasi */ = {
 			isa = PBXGroup;
 			children = (
+				5F3E216C29FA971400C13736 /* ViewControllers */,
+				5F3E216929FA954900C13736 /* CellDesign */,
 				5F3E213629FA944500C13736 /* AppDelegate.swift */,
 				5F3E213829FA944500C13736 /* SceneDelegate.swift */,
 				5F3E213A29FA944500C13736 /* ViewController.swift */,
@@ -128,6 +138,24 @@
 				5F3E215C29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift */,
 			);
 			path = Rehber_UygulamasiUITests;
+			sourceTree = "<group>";
+		};
+		5F3E216929FA954900C13736 /* CellDesign */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E216A29FA957200C13736 /* KisiTableViewCell.swift */,
+			);
+			path = CellDesign;
+			sourceTree = "<group>";
+		};
+		5F3E216C29FA971400C13736 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E216D29FA975900C13736 /* KisiEkleViewController.swift */,
+				5F3E216F29FA977000C13736 /* KisiGuncelleViewController.swift */,
+				5F3E217129FA978000C13736 /* KisiDetayViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F3E213B29FA944500C13736 /* ViewController.swift in Sources */,
+				5F3E217029FA977000C13736 /* KisiGuncelleViewController.swift in Sources */,
+				5F3E216E29FA975900C13736 /* KisiEkleViewController.swift in Sources */,
 				5F3E213729FA944500C13736 /* AppDelegate.swift in Sources */,
 				5F3E214129FA944500C13736 /* Rehber_Uygulamasi.xcdatamodeld in Sources */,
+				5F3E216B29FA957200C13736 /* KisiTableViewCell.swift in Sources */,
+				5F3E217229FA978000C13736 /* KisiDetayViewController.swift in Sources */,
 				5F3E213929FA944500C13736 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
