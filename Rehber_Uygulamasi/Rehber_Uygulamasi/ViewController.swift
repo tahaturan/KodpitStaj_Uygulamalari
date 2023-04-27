@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     var KisilerListe:[Kisiler] = [Kisiler]()
     
+    var aramaYapiliyorMu = false
+    var aramaKelimesi:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +34,14 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        tumKisileriAl()
+        
+        if aramaYapiliyorMu {
+            aramaYap(kisiAd: aramaKelimesi!)
+        }else{
+            tumKisileriAl()
+        }
+        
+        
         kisilerTableView.reloadData()
     }
 
@@ -71,6 +81,19 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource{
         
         let silAction = UIContextualAction(style: .destructive, title: "Sil") { (contextualAction, view, boolValue)  in
            
+            let kisi = self.KisilerListe[indexPath.row]
+            
+            self.context.delete(kisi)
+            
+            appDelegate.saveContext()
+            
+            if self.aramaYapiliyorMu {
+                self.aramaYap(kisiAd: self.aramaKelimesi!)
+            }else{
+                self.tumKisileriAl()
+            }
+            
+            self.kisilerTableView.reloadData()
             
         }
         
@@ -94,9 +117,39 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource{
 //SearchBar
 extension ViewController: UISearchBarDelegate{
     
+    func aramaYap(kisiAd:String)  {
+        
+        
+        let fetchRequest:NSFetchRequest<Kisiler>  = Kisiler.fetchRequest()
+        
+        fetchRequest.predicate = NSPredicate(format: "kisiAd CONTAINS %@", kisiAd)
+        
+        
+        do {
+            KisilerListe = try context.fetch(fetchRequest)
+        } catch  {
+            print(error)
+        }
+        
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("arama sonuc: \(searchText)")
+        
+       aramaKelimesi = searchText
+        
+        if searchText == ""{
+            aramaYapiliyorMu = false
+            tumKisileriAl()
+        }else{
+            aramaYapiliyorMu = true
+            aramaYap(kisiAd: aramaKelimesi!)
+        }
+        
+        kisilerTableView.reloadData()
     }
+    
+
     
 }
 
@@ -109,7 +162,19 @@ extension ViewController: UISearchBarDelegate{
 extension ViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let index = sender as? Int
         
+        if segue.identifier == "toDetay"{
+            let gidilecekVC = segue.destination as! KisiDetayViewController
+            
+            gidilecekVC.kisi = KisilerListe[index!]
+        }
+        
+        if segue.identifier == "toGuncelle"{
+            let gidilecekVC = segue.destination as! KisiGuncelleViewController
+            
+            gidilecekVC.kisi = KisilerListe[index!]
+        }
         
     }
 }

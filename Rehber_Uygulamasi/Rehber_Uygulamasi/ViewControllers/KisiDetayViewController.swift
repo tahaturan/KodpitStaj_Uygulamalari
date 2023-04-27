@@ -10,13 +10,17 @@ import UIKit
 class KisiDetayViewController: UIViewController {
     
     @IBOutlet weak var kisiAdLabel: UILabel!
-    
     @IBOutlet weak var kisiTelLabel: UILabel!
+    
+    var kisi:Kisiler?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let k = kisi {
+            kisiAdLabel.text = k.kisiAd
+            kisiTelLabel.text = k.kisiTel
+        }
     }
     
 
