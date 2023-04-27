@@ -13,12 +13,36 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 class ViewController: UIViewController {
     
     let context = appDelegate.persistentContainer.viewContext
+    
+    var kisilerListe:[Kisiler] = [Kisiler]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        veriKaydi()
         
+        veriOkuma()
     }
 
+    
+    func veriKaydi()  {
+       let kisi = Kisiler(context: context)
+        kisi.kisiAd = "Muhammed"
+        kisi.kisiYas = 25
+        
+        appDelegate.saveContext()
+    }
+    
+    func veriOkuma()  {
+        do {
+            kisilerListe = try context.fetch(Kisiler.fetchRequest())
+        } catch  {
+            print("Veri Okunurken Hata Oldu")
+        }
+        
+        for k in kisilerListe{
+            print("Ad: \(k.kisiAd ?? "") Yas: \(k.kisiYas)")
+        }
+    }
 
 }
 
