@@ -20,13 +20,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        // veriKaydi()
         
-        veriOkuma()
+        //veriOkuma()
         print("------------------")
        // veriSil()
         
-        veriGuncelle()
+        //veriGuncelle()
         
-        veriOkuma()
+        //veriOkuma()
+        
+        veriOkumaVeSiralama()
     }
 
     
@@ -63,6 +65,25 @@ class ViewController: UIViewController {
         kisi.kisiYas = 99
         
         appDelegate.saveContext()
+    }
+    
+    
+    func veriOkumaVeSiralama()  {
+        let fetchRequest:NSFetchRequest<Kisiler> = Kisiler.fetchRequest()
+        
+        let sort = NSSortDescriptor(key: #keyPath(Kisiler.kisiYas), ascending: true)
+        
+        fetchRequest.sortDescriptors = [sort]
+        
+        do {
+            kisilerListe = try context.fetch(fetchRequest)
+        } catch  {
+            print("Hata")
+        }
+        
+        for k in kisilerListe{
+            print("Ad: \(k.kisiAd ?? "") Yas: \(k.kisiYas)")
+        }
     }
 
 }
