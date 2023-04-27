@@ -8,9 +8,9 @@
 import UIKit
 
 class KisiGuncelleViewController: UIViewController {
+    let context = appDelegate.persistentContainer.viewContext
     
     @IBOutlet weak var kisiAdTextField: UITextField!
-    
     @IBOutlet weak var kisiTelTextField: UITextField!
     
     override func viewDidLoad() {
