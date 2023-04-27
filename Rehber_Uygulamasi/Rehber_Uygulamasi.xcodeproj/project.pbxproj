@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F3E213729FA944500C13736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E213629FA944500C13736 /* AppDelegate.swift */; };
+		5F3E213929FA944500C13736 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E213829FA944500C13736 /* SceneDelegate.swift */; };
+		5F3E213B29FA944500C13736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E213A29FA944500C13736 /* ViewController.swift */; };
+		5F3E213E29FA944500C13736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E213C29FA944500C13736 /* Main.storyboard */; };
+		5F3E214129FA944500C13736 /* Rehber_Uygulamasi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E213F29FA944500C13736 /* Rehber_Uygulamasi.xcdatamodeld */; };
+		5F3E214329FA944600C13736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E214229FA944600C13736 /* Assets.xcassets */; };
+		5F3E214629FA944600C13736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E214429FA944600C13736 /* LaunchScreen.storyboard */; };
+		5F3E215129FA944600C13736 /* Rehber_UygulamasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E215029FA944600C13736 /* Rehber_UygulamasiTests.swift */; };
+		5F3E215B29FA944600C13736 /* Rehber_UygulamasiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E215A29FA944600C13736 /* Rehber_UygulamasiUITests.swift */; };
+		5F3E215D29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E215C29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F3E214D29FA944600C13736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F3E212B29FA944500C13736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3E213229FA944500C13736;
+			remoteInfo = Rehber_Uygulamasi;
+		};
+		5F3E215729FA944600C13736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F3E212B29FA944500C13736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3E213229FA944500C13736;
+			remoteInfo = Rehber_Uygulamasi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F3E213329FA944500C13736 /* Rehber_Uygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rehber_Uygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3E213629FA944500C13736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F3E213829FA944500C13736 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F3E213A29FA944500C13736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F3E213D29FA944500C13736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F3E214029FA944500C13736 /* Rehber_Uygulamasi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rehber_Uygulamasi.xcdatamodel; sourceTree = "<group>"; };
+		5F3E214229FA944600C13736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F3E214529FA944600C13736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F3E214729FA944600C13736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F3E214C29FA944600C13736 /* Rehber_UygulamasiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rehber_UygulamasiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3E215029FA944600C13736 /* Rehber_UygulamasiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehber_UygulamasiTests.swift; sourceTree = "<group>"; };
+		5F3E215629FA944600C13736 /* Rehber_UygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rehber_UygulamasiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3E215A29FA944600C13736 /* Rehber_UygulamasiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehber_UygulamasiUITests.swift; sourceTree = "<group>"; };
+		5F3E215C29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rehber_UygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F3E213029FA944500C13736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E214929FA944600C13736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E215329FA944600C13736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F3E212A29FA944500C13736 = {
+			isa = PBXGroup;
+			children = (
+				5F3E213529FA944500C13736 /* Rehber_Uygulamasi */,
+				5F3E214F29FA944600C13736 /* Rehber_UygulamasiTests */,
+				5F3E215929FA944600C13736 /* Rehber_UygulamasiUITests */,
+				5F3E213429FA944500C13736 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F3E213429FA944500C13736 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E213329FA944500C13736 /* Rehber_Uygulamasi.app */,
+				5F3E214C29FA944600C13736 /* Rehber_UygulamasiTests.xctest */,
+				5F3E215629FA944600C13736 /* Rehber_UygulamasiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F3E213529FA944500C13736 /* Rehber_Uygulamasi */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E213629FA944500C13736 /* AppDelegate.swift */,
+				5F3E213829FA944500C13736 /* SceneDelegate.swift */,
+				5F3E213A29FA944500C13736 /* ViewController.swift */,
+				5F3E213C29FA944500C13736 /* Main.storyboard */,
+				5F3E214229FA944600C13736 /* Assets.xcassets */,
+				5F3E214429FA944600C13736 /* LaunchScreen.storyboard */,
+				5F3E214729FA944600C13736 /* Info.plist */,
+				5F3E213F29FA944500C13736 /* Rehber_Uygulamasi.xcdatamodeld */,
+			);
+			path = Rehber_Uygulamasi;
+			sourceTree = "<group>";
+		};
+		5F3E214F29FA944600C13736 /* Rehber_UygulamasiTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E215029FA944600C13736 /* Rehber_UygulamasiTests.swift */,
+			);
+			path = Rehber_UygulamasiTests;
+			sourceTree = "<group>";
+		};
+		5F3E215929FA944600C13736 /* Rehber_UygulamasiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E215A29FA944600C13736 /* Rehber_UygulamasiUITests.swift */,
+				5F3E215C29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift */,
+			);
+			path = Rehber_UygulamasiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F3E213229FA944500C13736 /* Rehber_Uygulamasi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3E216029FA944600C13736 /* Build configuration list for PBXNativeTarget "Rehber_Uygulamasi" */;
+			buildPhases = (
+				5F3E212F29FA944500C13736 /* Sources */,
+				5F3E213029FA944500C13736 /* Frameworks */,
+				5F3E213129FA944500C13736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rehber_Uygulamasi;
+			productName = Rehber_Uygulamasi;
+			productReference = 5F3E213329FA944500C13736 /* Rehber_Uygulamasi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F3E214B29FA944600C13736 /* Rehber_UygulamasiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3E216329FA944600C13736 /* Build configuration list for PBXNativeTarget "Rehber_UygulamasiTests" */;
+			buildPhases = (
+				5F3E214829FA944600C13736 /* Sources */,
+				5F3E214929FA944600C13736 /* Frameworks */,
+				5F3E214A29FA944600C13736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F3E214E29FA944600C13736 /* PBXTargetDependency */,
+			);
+			name = Rehber_UygulamasiTests;
+			productName = Rehber_UygulamasiTests;
+			productReference = 5F3E214C29FA944600C13736 /* Rehber_UygulamasiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F3E215529FA944600C13736 /* Rehber_UygulamasiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3E216629FA944600C13736 /* Build configuration list for PBXNativeTarget "Rehber_UygulamasiUITests" */;
+			buildPhases = (
+				5F3E215229FA944600C13736 /* Sources */,
+				5F3E215329FA944600C13736 /* Frameworks */,
+				5F3E215429FA944600C13736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F3E215829FA944600C13736 /* PBXTargetDependency */,
+			);
+			name = Rehber_UygulamasiUITests;
+			productName = Rehber_UygulamasiUITests;
+			productReference = 5F3E215629FA944600C13736 /* Rehber_UygulamasiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F3E212B29FA944500C13736 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5F3E213229FA944500C13736 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					5F3E214B29FA944600C13736 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 5F3E213229FA944500C13736;
+					};
+					5F3E215529FA944600C13736 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 5F3E213229FA944500C13736;
+					};
+				};
+			};
+			buildConfigurationList = 5F3E212E29FA944500C13736 /* Build configuration list for PBXProject "Rehber_Uygulamasi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F3E212A29FA944500C13736;
+			productRefGroup = 5F3E213429FA944500C13736 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F3E213229FA944500C13736 /* Rehber_Uygulamasi */,
+				5F3E214B29FA944600C13736 /* Rehber_UygulamasiTests */,
+				5F3E215529FA944600C13736 /* Rehber_UygulamasiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F3E213129FA944500C13736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3E214629FA944600C13736 /* LaunchScreen.storyboard in Resources */,
+				5F3E214329FA944600C13736 /* Assets.xcassets in Resources */,
+				5F3E213E29FA944500C13736 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E214A29FA944600C13736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E215429FA944600C13736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F3E212F29FA944500C13736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3E213B29FA944500C13736 /* ViewController.swift in Sources */,
+				5F3E213729FA944500C13736 /* AppDelegate.swift in Sources */,
+				5F3E214129FA944500C13736 /* Rehber_Uygulamasi.xcdatamodeld in Sources */,
+				5F3E213929FA944500C13736 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E214829FA944600C13736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3E215129FA944600C13736 /* Rehber_UygulamasiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E215229FA944600C13736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3E215B29FA944600C13736 /* Rehber_UygulamasiUITests.swift in Sources */,
+				5F3E215D29FA944600C13736 /* Rehber_UygulamasiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F3E214E29FA944600C13736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F3E213229FA944500C13736 /* Rehber_Uygulamasi */;
+			targetProxy = 5F3E214D29FA944600C13736 /* PBXContainerItemProxy */;
+		};
+		5F3E215829FA944600C13736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F3E213229FA944500C13736 /* Rehber_Uygulamasi */;
+			targetProxy = 5F3E215729FA944600C13736 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F3E213C29FA944500C13736 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F3E213D29FA944500C13736 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F3E214429FA944600C13736 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F3E214529FA944600C13736 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F3E215E29FA944600C13736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F3E215F29FA944600C13736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F3E216129FA944600C13736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rehber_Uygulamasi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.Rehber-Uygulamasi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F3E216229FA944600C13736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rehber_Uygulamasi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.Rehber-Uygulamasi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F3E216429FA944600C13736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.Rehber-UygulamasiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rehber_Uygulamasi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rehber_Uygulamasi";
+			};
+			name = Debug;
+		};
+		5F3E216529FA944600C13736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.Rehber-UygulamasiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rehber_Uygulamasi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rehber_Uygulamasi";
+			};
+			name = Release;
+		};
+		5F3E216729FA944600C13736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.Rehber-UygulamasiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rehber_Uygulamasi;
+			};
+			name = Debug;
+		};
+		5F3E216829FA944600C13736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.Rehber-UygulamasiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rehber_Uygulamasi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F3E212E29FA944500C13736 /* Build configuration list for PBXProject "Rehber_Uygulamasi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3E215E29FA944600C13736 /* Debug */,
+				5F3E215F29FA944600C13736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3E216029FA944600C13736 /* Build configuration list for PBXNativeTarget "Rehber_Uygulamasi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3E216129FA944600C13736 /* Debug */,
+				5F3E216229FA944600C13736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3E216329FA944600C13736 /* Build configuration list for PBXNativeTarget "Rehber_UygulamasiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3E216429FA944600C13736 /* Debug */,
+				5F3E216529FA944600C13736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3E216629FA944600C13736 /* Build configuration list for PBXNativeTarget "Rehber_UygulamasiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3E216729FA944600C13736 /* Debug */,
+				5F3E216829FA944600C13736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F3E213F29FA944500C13736 /* Rehber_Uygulamasi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F3E214029FA944500C13736 /* Rehber_Uygulamasi.xcdatamodel */,
+			);
+			currentVersion = 5F3E214029FA944500C13736 /* Rehber_Uygulamasi.xcdatamodel */;
+			path = Rehber_Uygulamasi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F3E212B29FA944500C13736 /* Project object */;
+}
