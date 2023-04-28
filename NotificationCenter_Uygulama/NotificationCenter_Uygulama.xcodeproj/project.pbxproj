@@ -16,6 +16,8 @@
 		5F9D1F3729FBFFF30038C5DE /* NotificationCenter_UygulamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1F3629FBFFF30038C5DE /* NotificationCenter_UygulamaTests.swift */; };
 		5F9D1F4129FBFFF30038C5DE /* NotificationCenter_UygulamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1F4029FBFFF30038C5DE /* NotificationCenter_UygulamaUITests.swift */; };
 		5F9D1F4329FBFFF30038C5DE /* NotificationCenter_UygulamaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1F4229FBFFF30038C5DE /* NotificationCenter_UygulamaUITestsLaunchTests.swift */; };
+		5F9D1F5029FC008B0038C5DE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1F4F29FC008B0038C5DE /* ViewController2.swift */; };
+		5F9D1F5229FC016D0038C5DE /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1F5129FC016D0038C5DE /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5F9D1F3C29FBFFF30038C5DE /* NotificationCenter_UygulamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationCenter_UygulamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9D1F4029FBFFF30038C5DE /* NotificationCenter_UygulamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter_UygulamaUITests.swift; sourceTree = "<group>"; };
 		5F9D1F4229FBFFF30038C5DE /* NotificationCenter_UygulamaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter_UygulamaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F9D1F4F29FC008B0038C5DE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		5F9D1F5129FC016D0038C5DE /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				5F9D1F2829FBFFF30038C5DE /* Assets.xcassets */,
 				5F9D1F2A29FBFFF30038C5DE /* LaunchScreen.storyboard */,
 				5F9D1F2D29FBFFF30038C5DE /* Info.plist */,
+				5F9D1F4F29FC008B0038C5DE /* ViewController2.swift */,
+				5F9D1F5129FC016D0038C5DE /* Kisiler.swift */,
 			);
 			path = NotificationCenter_Uygulama;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9D1F2429FBFFF20038C5DE /* ViewController.swift in Sources */,
+				5F9D1F5029FC008B0038C5DE /* ViewController2.swift in Sources */,
 				5F9D1F2029FBFFF20038C5DE /* AppDelegate.swift in Sources */,
 				5F9D1F2229FBFFF20038C5DE /* SceneDelegate.swift in Sources */,
+				5F9D1F5229FC016D0038C5DE /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
