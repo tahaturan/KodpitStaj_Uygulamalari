@@ -17,6 +17,7 @@
 		5F9D1EB929FBB58F0038C5DE /* ArtBookProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1EB829FBB58F0038C5DE /* ArtBookProjectTests.swift */; };
 		5F9D1EC329FBB58F0038C5DE /* ArtBookProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1EC229FBB58F0038C5DE /* ArtBookProjectUITests.swift */; };
 		5F9D1EC529FBB58F0038C5DE /* ArtBookProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1EC429FBB58F0038C5DE /* ArtBookProjectUITestsLaunchTests.swift */; };
+		5F9D1ED229FBB9530038C5DE /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D1ED129FBB9530038C5DE /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5F9D1EBE29FBB58F0038C5DE /* ArtBookProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtBookProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9D1EC229FBB58F0038C5DE /* ArtBookProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtBookProjectUITests.swift; sourceTree = "<group>"; };
 		5F9D1EC429FBB58F0038C5DE /* ArtBookProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtBookProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F9D1ED129FBB9530038C5DE /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				5F9D1EAC29FBB58F0038C5DE /* LaunchScreen.storyboard */,
 				5F9D1EAF29FBB58F0038C5DE /* Info.plist */,
 				5F9D1EA729FBB58E0038C5DE /* ArtBookProject.xcdatamodeld */,
+				5F9D1ED129FBB9530038C5DE /* DetailsVC.swift */,
 			);
 			path = ArtBookProject;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				5F9D1EA329FBB58E0038C5DE /* ViewController.swift in Sources */,
 				5F9D1E9F29FBB58E0038C5DE /* AppDelegate.swift in Sources */,
 				5F9D1EA129FBB58E0038C5DE /* SceneDelegate.swift in Sources */,
+				5F9D1ED229FBB9530038C5DE /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
