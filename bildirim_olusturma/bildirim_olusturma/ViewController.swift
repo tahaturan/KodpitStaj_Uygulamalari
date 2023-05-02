@@ -6,12 +6,28 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ViewController: UIViewController {
+    
+    var izinKontrol:Bool = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert , .badge , .sound], completionHandler: {
+            (granted , error) in
+            self.izinKontrol = granted
+            
+            if granted{
+                print("izin alma islemi basarili")
+            }else{
+                print("izin alma islemi basariz")
+            }
+        })
+        
+        
     }
 
 
