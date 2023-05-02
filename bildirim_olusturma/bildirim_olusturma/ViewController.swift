@@ -30,6 +30,23 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func bildirim(_ sender: Any) {
+        if izinKontrol{
+            let icerik = UNMutableNotificationContent()
+            icerik.title = "Baslik"
+            icerik.subtitle = "Alt Baslik"
+            icerik.body = "Mesaj"
+            icerik.badge = 1
+            icerik.sound = UNNotificationSound.default
+            
+            let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+            
+            let bildirimIstegi = UNNotificationRequest(identifier: "bildirimOlusturma", content: icerik, trigger: tetikleme)
+            
+            UNUserNotificationCenter.current().add(bildirimIstegi)
+        }
+    }
+    
+    
 }
 
