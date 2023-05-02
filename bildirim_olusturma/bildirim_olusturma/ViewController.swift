@@ -41,7 +41,13 @@ class ViewController: UIViewController {
             icerik.badge = 1
             icerik.sound = UNNotificationSound.default
             
-            let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+            var date = DateComponents()
+            date.minute = 30
+            date.hour = 10
+            
+            let tetikleme = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+            
+            //let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
             
             let bildirimIstegi = UNNotificationRequest(identifier: "bildirimOlusturma", content: icerik, trigger: tetikleme)
             
