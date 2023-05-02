@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FC236FB2A00E71800763BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC236FA2A00E71800763BF4 /* AppDelegate.swift */; };
+		5FC236FD2A00E71800763BF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC236FC2A00E71800763BF4 /* SceneDelegate.swift */; };
+		5FC236FF2A00E71800763BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC236FE2A00E71800763BF4 /* ViewController.swift */; };
+		5FC237022A00E71800763BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC237002A00E71800763BF4 /* Main.storyboard */; };
+		5FC237042A00E71900763BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC237032A00E71900763BF4 /* Assets.xcassets */; };
+		5FC237072A00E71900763BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC237052A00E71900763BF4 /* LaunchScreen.storyboard */; };
+		5FC237122A00E71900763BF4 /* bildirim_olusturmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC237112A00E71900763BF4 /* bildirim_olusturmaTests.swift */; };
+		5FC2371C2A00E71900763BF4 /* bildirim_olusturmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2371B2A00E71900763BF4 /* bildirim_olusturmaUITests.swift */; };
+		5FC2371E2A00E71900763BF4 /* bildirim_olusturmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2371D2A00E71900763BF4 /* bildirim_olusturmaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FC2370E2A00E71900763BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC236EF2A00E71800763BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC236F62A00E71800763BF4;
+			remoteInfo = bildirim_olusturma;
+		};
+		5FC237182A00E71900763BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC236EF2A00E71800763BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC236F62A00E71800763BF4;
+			remoteInfo = bildirim_olusturma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FC236F72A00E71800763BF4 /* bildirim_olusturma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bildirim_olusturma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC236FA2A00E71800763BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FC236FC2A00E71800763BF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5FC236FE2A00E71800763BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FC237012A00E71800763BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FC237032A00E71900763BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC237062A00E71900763BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FC237082A00E71900763BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC2370D2A00E71900763BF4 /* bildirim_olusturmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bildirim_olusturmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC237112A00E71900763BF4 /* bildirim_olusturmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bildirim_olusturmaTests.swift; sourceTree = "<group>"; };
+		5FC237172A00E71900763BF4 /* bildirim_olusturmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bildirim_olusturmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC2371B2A00E71900763BF4 /* bildirim_olusturmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bildirim_olusturmaUITests.swift; sourceTree = "<group>"; };
+		5FC2371D2A00E71900763BF4 /* bildirim_olusturmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bildirim_olusturmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FC236F42A00E71800763BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC2370A2A00E71900763BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC237142A00E71900763BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FC236EE2A00E71800763BF4 = {
+			isa = PBXGroup;
+			children = (
+				5FC236F92A00E71800763BF4 /* bildirim_olusturma */,
+				5FC237102A00E71900763BF4 /* bildirim_olusturmaTests */,
+				5FC2371A2A00E71900763BF4 /* bildirim_olusturmaUITests */,
+				5FC236F82A00E71800763BF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FC236F82A00E71800763BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FC236F72A00E71800763BF4 /* bildirim_olusturma.app */,
+				5FC2370D2A00E71900763BF4 /* bildirim_olusturmaTests.xctest */,
+				5FC237172A00E71900763BF4 /* bildirim_olusturmaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FC236F92A00E71800763BF4 /* bildirim_olusturma */ = {
+			isa = PBXGroup;
+			children = (
+				5FC236FA2A00E71800763BF4 /* AppDelegate.swift */,
+				5FC236FC2A00E71800763BF4 /* SceneDelegate.swift */,
+				5FC236FE2A00E71800763BF4 /* ViewController.swift */,
+				5FC237002A00E71800763BF4 /* Main.storyboard */,
+				5FC237032A00E71900763BF4 /* Assets.xcassets */,
+				5FC237052A00E71900763BF4 /* LaunchScreen.storyboard */,
+				5FC237082A00E71900763BF4 /* Info.plist */,
+			);
+			path = bildirim_olusturma;
+			sourceTree = "<group>";
+		};
+		5FC237102A00E71900763BF4 /* bildirim_olusturmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FC237112A00E71900763BF4 /* bildirim_olusturmaTests.swift */,
+			);
+			path = bildirim_olusturmaTests;
+			sourceTree = "<group>";
+		};
+		5FC2371A2A00E71900763BF4 /* bildirim_olusturmaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FC2371B2A00E71900763BF4 /* bildirim_olusturmaUITests.swift */,
+				5FC2371D2A00E71900763BF4 /* bildirim_olusturmaUITestsLaunchTests.swift */,
+			);
+			path = bildirim_olusturmaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FC236F62A00E71800763BF4 /* bildirim_olusturma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC237212A00E71900763BF4 /* Build configuration list for PBXNativeTarget "bildirim_olusturma" */;
+			buildPhases = (
+				5FC236F32A00E71800763BF4 /* Sources */,
+				5FC236F42A00E71800763BF4 /* Frameworks */,
+				5FC236F52A00E71800763BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bildirim_olusturma;
+			productName = bildirim_olusturma;
+			productReference = 5FC236F72A00E71800763BF4 /* bildirim_olusturma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FC2370C2A00E71900763BF4 /* bildirim_olusturmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC237242A00E71900763BF4 /* Build configuration list for PBXNativeTarget "bildirim_olusturmaTests" */;
+			buildPhases = (
+				5FC237092A00E71900763BF4 /* Sources */,
+				5FC2370A2A00E71900763BF4 /* Frameworks */,
+				5FC2370B2A00E71900763BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC2370F2A00E71900763BF4 /* PBXTargetDependency */,
+			);
+			name = bildirim_olusturmaTests;
+			productName = bildirim_olusturmaTests;
+			productReference = 5FC2370D2A00E71900763BF4 /* bildirim_olusturmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FC237162A00E71900763BF4 /* bildirim_olusturmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC237272A00E71900763BF4 /* Build configuration list for PBXNativeTarget "bildirim_olusturmaUITests" */;
+			buildPhases = (
+				5FC237132A00E71900763BF4 /* Sources */,
+				5FC237142A00E71900763BF4 /* Frameworks */,
+				5FC237152A00E71900763BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC237192A00E71900763BF4 /* PBXTargetDependency */,
+			);
+			name = bildirim_olusturmaUITests;
+			productName = bildirim_olusturmaUITests;
+			productReference = 5FC237172A00E71900763BF4 /* bildirim_olusturmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FC236EF2A00E71800763BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5FC236F62A00E71800763BF4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					5FC2370C2A00E71900763BF4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 5FC236F62A00E71800763BF4;
+					};
+					5FC237162A00E71900763BF4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 5FC236F62A00E71800763BF4;
+					};
+				};
+			};
+			buildConfigurationList = 5FC236F22A00E71800763BF4 /* Build configuration list for PBXProject "bildirim_olusturma" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FC236EE2A00E71800763BF4;
+			productRefGroup = 5FC236F82A00E71800763BF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FC236F62A00E71800763BF4 /* bildirim_olusturma */,
+				5FC2370C2A00E71900763BF4 /* bildirim_olusturmaTests */,
+				5FC237162A00E71900763BF4 /* bildirim_olusturmaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FC236F52A00E71800763BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC237072A00E71900763BF4 /* LaunchScreen.storyboard in Resources */,
+				5FC237042A00E71900763BF4 /* Assets.xcassets in Resources */,
+				5FC237022A00E71800763BF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC2370B2A00E71900763BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC237152A00E71900763BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC236F32A00E71800763BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC236FF2A00E71800763BF4 /* ViewController.swift in Sources */,
+				5FC236FB2A00E71800763BF4 /* AppDelegate.swift in Sources */,
+				5FC236FD2A00E71800763BF4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC237092A00E71900763BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC237122A00E71900763BF4 /* bildirim_olusturmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC237132A00E71900763BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC2371C2A00E71900763BF4 /* bildirim_olusturmaUITests.swift in Sources */,
+				5FC2371E2A00E71900763BF4 /* bildirim_olusturmaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FC2370F2A00E71900763BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC236F62A00E71800763BF4 /* bildirim_olusturma */;
+			targetProxy = 5FC2370E2A00E71900763BF4 /* PBXContainerItemProxy */;
+		};
+		5FC237192A00E71900763BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC236F62A00E71800763BF4 /* bildirim_olusturma */;
+			targetProxy = 5FC237182A00E71900763BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FC237002A00E71800763BF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC237012A00E71800763BF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FC237052A00E71900763BF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC237062A00E71900763BF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FC2371F2A00E71900763BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FC237202A00E71900763BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FC237222A00E71900763BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bildirim_olusturma/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.bildirim-olusturma";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FC237232A00E71900763BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bildirim_olusturma/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.bildirim-olusturma";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5FC237252A00E71900763BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.bildirim-olusturmaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bildirim_olusturma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bildirim_olusturma";
+			};
+			name = Debug;
+		};
+		5FC237262A00E71900763BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.bildirim-olusturmaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bildirim_olusturma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bildirim_olusturma";
+			};
+			name = Release;
+		};
+		5FC237282A00E71900763BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.bildirim-olusturmaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bildirim_olusturma;
+			};
+			name = Debug;
+		};
+		5FC237292A00E71900763BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKXQYP47Y9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahaturan.testone.bildirim-olusturmaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bildirim_olusturma;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FC236F22A00E71800763BF4 /* Build configuration list for PBXProject "bildirim_olusturma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC2371F2A00E71900763BF4 /* Debug */,
+				5FC237202A00E71900763BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC237212A00E71900763BF4 /* Build configuration list for PBXNativeTarget "bildirim_olusturma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC237222A00E71900763BF4 /* Debug */,
+				5FC237232A00E71900763BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC237242A00E71900763BF4 /* Build configuration list for PBXNativeTarget "bildirim_olusturmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC237252A00E71900763BF4 /* Debug */,
+				5FC237262A00E71900763BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC237272A00E71900763BF4 /* Build configuration list for PBXNativeTarget "bildirim_olusturmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC237282A00E71900763BF4 /* Debug */,
+				5FC237292A00E71900763BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FC236EF2A00E71800763BF4 /* Project object */;
+}
