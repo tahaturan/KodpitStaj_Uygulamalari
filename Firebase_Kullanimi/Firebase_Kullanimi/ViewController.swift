@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         ref = Database.database().reference()
         //kisiEkle()
         //kisiSil()
-        kisiGuncelle()
+        //kisiGuncelle()
+        tumKisiler()
     }
     
     
@@ -38,6 +39,35 @@ class ViewController: UIViewController {
     func kisiGuncelle()  {
         let dict:[String:Any] = ["kisiAd":"YeniTaha" , "kisiYas":30]
         ref?.child("kisiler").child("-NUWLEUp7jPQYDEIACW9").updateChildValues(dict)
+    }
+    
+    func tumKisiler()  {
+        ref?.child("kisiler").observe(.value, with: { snapshot in
+            
+            if let gelenVeriButunu = snapshot.value as? Dictionary<String,Any>{
+                
+                for gelenSatirVerisi in gelenVeriButunu {
+                    
+                    if let sozluk = gelenSatirVerisi.value as? NSDictionary{
+                        
+                        let key = gelenSatirVerisi.key
+                        let kisiAd = sozluk["kisiAd"] as? String ?? ""
+                        let kisiYas = sozluk["kisiYas"] as? Int ?? 0
+                        
+                        print("Key      : \(key)")
+                        print("Kisi Ad  : \(kisiAd)")
+                        print("Kisi Yas : \(kisiYas)")
+                        print("------------------------------")
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            
+            
+        })
     }
 
 
