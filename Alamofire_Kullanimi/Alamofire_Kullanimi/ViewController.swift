@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         
        //urunEkle()
         //urunGuncelle()
-        urunSil()
+        //urunSil()
+        tumUrunler()
         
     }
     
@@ -79,6 +80,35 @@ class ViewController: UIViewController {
                 
             }
             
+            
+        }
+    }
+    
+    func tumUrunler()  {
+        AF.request("https://dummyjson.com/products" , method: .get).response {
+            response in
+            
+            if let data = response.data{
+                
+                do {
+                    
+                    let cevap = try JSONDecoder().decode(UrunCevap.self, from: data)
+                    
+                    if let urunListesi = cevap.products {
+                        
+                        for product in urunListesi {
+                            print(product.title)
+                        }
+                        
+                    }
+                    
+                    
+                } catch  {
+                    print(error.localizedDescription)
+                }
+                
+                
+            }
             
         }
     }

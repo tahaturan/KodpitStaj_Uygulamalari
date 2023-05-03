@@ -17,6 +17,8 @@
 		5FC2380C2A024B7400763BF4 /* Alamofire_KullanimiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2380B2A024B7400763BF4 /* Alamofire_KullanimiUITests.swift */; };
 		5FC2380E2A024B7400763BF4 /* Alamofire_KullanimiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2380D2A024B7400763BF4 /* Alamofire_KullanimiUITestsLaunchTests.swift */; };
 		5FC2381C2A024BC700763BF4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5FC2381B2A024BC700763BF4 /* Alamofire */; };
+		5FC2381E2A02559E00763BF4 /* Urunler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2381D2A02559E00763BF4 /* Urunler.swift */; };
+		5FC238202A0255C200763BF4 /* UrunCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2381F2A0255C200763BF4 /* UrunCevap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		5FC238072A024B7400763BF4 /* Alamofire_KullanimiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alamofire_KullanimiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC2380B2A024B7400763BF4 /* Alamofire_KullanimiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_KullanimiUITests.swift; sourceTree = "<group>"; };
 		5FC2380D2A024B7400763BF4 /* Alamofire_KullanimiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_KullanimiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FC2381D2A02559E00763BF4 /* Urunler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urunler.swift; sourceTree = "<group>"; };
+		5FC2381F2A0255C200763BF4 /* UrunCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				5FC237F32A024B7400763BF4 /* Assets.xcassets */,
 				5FC237F52A024B7400763BF4 /* LaunchScreen.storyboard */,
 				5FC237F82A024B7400763BF4 /* Info.plist */,
+				5FC2381D2A02559E00763BF4 /* Urunler.swift */,
+				5FC2381F2A0255C200763BF4 /* UrunCevap.swift */,
 			);
 			path = Alamofire_Kullanimi;
 			sourceTree = "<group>";
@@ -267,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC237EF2A024B7300763BF4 /* ViewController.swift in Sources */,
+				5FC2381E2A02559E00763BF4 /* Urunler.swift in Sources */,
 				5FC237EB2A024B7300763BF4 /* AppDelegate.swift in Sources */,
 				5FC237ED2A024B7300763BF4 /* SceneDelegate.swift in Sources */,
+				5FC238202A0255C200763BF4 /* UrunCevap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
