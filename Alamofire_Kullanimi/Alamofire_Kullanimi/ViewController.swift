@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       urunEkle()
+       //urunEkle()
+        //urunGuncelle()
+        urunSil()
         
     }
     
@@ -32,6 +34,48 @@ class ViewController: UIViewController {
                     print(error.localizedDescription)
                 }
                 
+                
+            }
+            
+            
+        }
+    }
+    
+    func urunGuncelle()  {
+        let parametre:Parameters = ["title":"DenemeTelefon"]
+        
+        AF.request("https://dummyjson.com/products/1" , method: .put , parameters: parametre).response {
+            response in
+            
+            if let data = response.data {
+                
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data) as? Dictionary<String,Any> {
+                        print(json)
+                    }
+                } catch  {
+                    print(error.localizedDescription)
+                }
+                
+            }
+            
+            
+        }
+    }
+    
+    func urunSil()  {
+        AF.request("https://dummyjson.com/products/1" , method: .delete).response {
+            response in
+            
+            if let data = response.data{
+                
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data) as? Dictionary<String,Any>{
+                        print(json)
+                    }
+                } catch  {
+                    print(error.localizedDescription)
+                }
                 
             }
             
