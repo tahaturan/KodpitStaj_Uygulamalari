@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVu-eE-2tI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KsU-sD-Iib">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -88,6 +88,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i74-w7-t9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="858.77862595419845" y="-35.211267605633807"/>
+        </scene>
+        <!--Core Location And Map KitVC-->
+        <scene sceneID="WRQ-bG-SEB">
+            <objects>
+                <viewController id="KsU-sD-Iib" customClass="CoreLocationAndMapKitVC" customModule="CoreLocationFramework_Kullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JHn-fs-hQy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7F6-BP-qNd">
+                                <rect key="frame" x="16" y="91" width="361" height="398"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="Lcv-n6-lFM"/>
+                                    <constraint firstAttribute="width" constant="361" id="lNk-dE-dhe"/>
+                                </constraints>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6S-wV-vlZ">
+                                <rect key="frame" x="167" y="527" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-yk-C74">
+                                <rect key="frame" x="167" y="585" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNc-6M-3hy">
+                                <rect key="frame" x="167" y="651" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C1g-sg-ds8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jNc-6M-3hy" firstAttribute="top" secondItem="Jea-yk-C74" secondAttribute="bottom" constant="36" id="0gK-Df-B5a"/>
+                            <constraint firstItem="c6S-wV-vlZ" firstAttribute="top" secondItem="7F6-BP-qNd" secondAttribute="bottom" constant="38" id="99d-pk-RQL"/>
+                            <constraint firstItem="7F6-BP-qNd" firstAttribute="centerX" secondItem="JHn-fs-hQy" secondAttribute="centerX" id="EHJ-fA-eX6"/>
+                            <constraint firstItem="jNc-6M-3hy" firstAttribute="centerX" secondItem="JHn-fs-hQy" secondAttribute="centerX" id="GAg-y5-9wj"/>
+                            <constraint firstItem="Jea-yk-C74" firstAttribute="centerX" secondItem="JHn-fs-hQy" secondAttribute="centerX" id="ROO-4a-tXj"/>
+                            <constraint firstItem="7F6-BP-qNd" firstAttribute="top" secondItem="C1g-sg-ds8" secondAttribute="top" constant="32" id="erQ-lZ-E5u"/>
+                            <constraint firstItem="c6S-wV-vlZ" firstAttribute="centerX" secondItem="JHn-fs-hQy" secondAttribute="centerX" id="hIe-l9-E9L"/>
+                            <constraint firstItem="Jea-yk-C74" firstAttribute="top" secondItem="c6S-wV-vlZ" secondAttribute="bottom" constant="28" id="iOk-cF-Nwm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boylamLabel" destination="Jea-yk-C74" id="ftM-ee-WlY"/>
+                        <outlet property="enlemLabel" destination="c6S-wV-vlZ" id="pmi-Dc-GfO"/>
+                        <outlet property="hizLabel" destination="jNc-6M-3hy" id="hHW-WL-QKl"/>
+                        <outlet property="mapView" destination="7F6-BP-qNd" id="Oqk-Np-WQ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdH-Vs-Dfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684.7328244274809" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <resources>
