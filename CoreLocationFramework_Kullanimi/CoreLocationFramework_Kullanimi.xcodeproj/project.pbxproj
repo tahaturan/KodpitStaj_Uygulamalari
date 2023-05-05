@@ -16,6 +16,7 @@
 		5FCF5ABB2A05122500F4E12E /* CoreLocationFramework_KullanimiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5ABA2A05122500F4E12E /* CoreLocationFramework_KullanimiTests.swift */; };
 		5FCF5AC52A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AC42A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.swift */; };
 		5FCF5AC72A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AC62A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift */; };
+		5FCF5AD52A0512B700F4E12E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5FCF5AC02A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationFramework_KullanimiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCF5AC42A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationFramework_KullanimiUITests.swift; sourceTree = "<group>"; };
 		5FCF5AC62A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationFramework_KullanimiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCF5AD52A0512B700F4E12E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				5FCF5AB92A05122500F4E12E /* CoreLocationFramework_KullanimiTests */,
 				5FCF5AC32A05122500F4E12E /* CoreLocationFramework_KullanimiUITests */,
 				5FCF5AA12A05122400F4E12E /* Products */,
+				5FCF5AD32A0512B600F4E12E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 				5FCF5AC62A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift */,
 			);
 			path = CoreLocationFramework_KullanimiUITests;
+			sourceTree = "<group>";
+		};
+		5FCF5AD32A0512B600F4E12E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
