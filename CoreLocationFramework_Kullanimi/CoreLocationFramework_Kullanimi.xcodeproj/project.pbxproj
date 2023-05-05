@@ -19,6 +19,7 @@
 		5FCF5AD52A0512B700F4E12E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */; };
 		5FCF5AD72A05177300F4E12E /* MapKitKullanimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AD62A05177300F4E12E /* MapKitKullanimViewController.swift */; };
 		5FCF5AD92A05226B00F4E12E /* CoreLocationAndMapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AD82A05226B00F4E12E /* CoreLocationAndMapKitVC.swift */; };
+		5FCF5ADB2A052B1800F4E12E /* MapKitSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5ADA2A052B1800F4E12E /* MapKitSearchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5FCF5AD62A05177300F4E12E /* MapKitKullanimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitKullanimViewController.swift; sourceTree = "<group>"; };
 		5FCF5AD82A05226B00F4E12E /* CoreLocationAndMapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationAndMapKitVC.swift; sourceTree = "<group>"; };
+		5FCF5ADA2A052B1800F4E12E /* MapKitSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitSearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				5FCF5AA72A05122400F4E12E /* ViewController.swift */,
 				5FCF5AD62A05177300F4E12E /* MapKitKullanimViewController.swift */,
 				5FCF5AD82A05226B00F4E12E /* CoreLocationAndMapKitVC.swift */,
+				5FCF5ADA2A052B1800F4E12E /* MapKitSearchVC.swift */,
 				5FCF5AA92A05122400F4E12E /* Main.storyboard */,
 				5FCF5AAC2A05122500F4E12E /* Assets.xcassets */,
 				5FCF5AAE2A05122500F4E12E /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 			files = (
 				5FCF5AA82A05122400F4E12E /* ViewController.swift in Sources */,
 				5FCF5AD92A05226B00F4E12E /* CoreLocationAndMapKitVC.swift in Sources */,
+				5FCF5ADB2A052B1800F4E12E /* MapKitSearchVC.swift in Sources */,
 				5FCF5AA42A05122400F4E12E /* AppDelegate.swift in Sources */,
 				5FCF5AA62A05122400F4E12E /* SceneDelegate.swift in Sources */,
 				5FCF5AD72A05177300F4E12E /* MapKitKullanimViewController.swift in Sources */,

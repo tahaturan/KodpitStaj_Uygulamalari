@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KsU-sD-Iib">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2BJ-Vb-KdZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -147,6 +147,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdH-Vs-Dfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1684.7328244274809" y="-35.211267605633807"/>
+        </scene>
+        <!--Map Kit SearchVC-->
+        <scene sceneID="v1X-UZ-gt7">
+            <objects>
+                <viewController id="2BJ-Vb-KdZ" customClass="MapKitSearchVC" customModule="CoreLocationFramework_Kullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8TO-9A-SkG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LSO-tv-bhB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2BJ-Vb-KdZ" id="4LR-pg-mSb"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8t5-04-gFh">
+                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NBo-DC-62R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LSO-tv-bhB" firstAttribute="top" secondItem="NBo-DC-62R" secondAttribute="top" id="CsJ-zx-WnQ"/>
+                            <constraint firstItem="NBo-DC-62R" firstAttribute="bottom" secondItem="8t5-04-gFh" secondAttribute="bottom" id="Kxl-z3-H9w"/>
+                            <constraint firstItem="LSO-tv-bhB" firstAttribute="trailing" secondItem="NBo-DC-62R" secondAttribute="trailing" id="LTd-LM-bK4"/>
+                            <constraint firstItem="LSO-tv-bhB" firstAttribute="leading" secondItem="NBo-DC-62R" secondAttribute="leading" id="b7V-79-GFR"/>
+                            <constraint firstItem="8t5-04-gFh" firstAttribute="top" secondItem="LSO-tv-bhB" secondAttribute="bottom" id="dnh-b7-Sab"/>
+                            <constraint firstItem="8t5-04-gFh" firstAttribute="leading" secondItem="NBo-DC-62R" secondAttribute="leading" id="pkB-z2-hOP"/>
+                            <constraint firstItem="NBo-DC-62R" firstAttribute="trailing" secondItem="8t5-04-gFh" secondAttribute="trailing" id="qZT-Pf-GB5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapKitView" destination="8t5-04-gFh" id="O3T-1E-dO8"/>
+                        <outlet property="searchBar" destination="LSO-tv-bhB" id="feD-k7-hln"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23R-RW-qZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2546" y="-32"/>
         </scene>
     </scenes>
     <resources>
