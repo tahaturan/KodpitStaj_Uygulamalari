@@ -17,6 +17,7 @@
 		5FCF5AC52A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AC42A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.swift */; };
 		5FCF5AC72A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AC62A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift */; };
 		5FCF5AD52A0512B700F4E12E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */; };
+		5FCF5AD72A05177300F4E12E /* MapKitKullanimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF5AD62A05177300F4E12E /* MapKitKullanimViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5FCF5AC42A05122500F4E12E /* CoreLocationFramework_KullanimiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationFramework_KullanimiUITests.swift; sourceTree = "<group>"; };
 		5FCF5AC62A05122500F4E12E /* CoreLocationFramework_KullanimiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationFramework_KullanimiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5FCF5AD42A0512B700F4E12E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5FCF5AD62A05177300F4E12E /* MapKitKullanimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitKullanimViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5FCF5AA32A05122400F4E12E /* AppDelegate.swift */,
 				5FCF5AA52A05122400F4E12E /* SceneDelegate.swift */,
 				5FCF5AA72A05122400F4E12E /* ViewController.swift */,
+				5FCF5AD62A05177300F4E12E /* MapKitKullanimViewController.swift */,
 				5FCF5AA92A05122400F4E12E /* Main.storyboard */,
 				5FCF5AAC2A05122500F4E12E /* Assets.xcassets */,
 				5FCF5AAE2A05122500F4E12E /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				5FCF5AA82A05122400F4E12E /* ViewController.swift in Sources */,
 				5FCF5AA42A05122400F4E12E /* AppDelegate.swift in Sources */,
 				5FCF5AA62A05122400F4E12E /* SceneDelegate.swift in Sources */,
+				5FCF5AD72A05177300F4E12E /* MapKitKullanimViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +456,7 @@
 				DEVELOPMENT_TEAM = UKXQYP47Y9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreLocationFramework_Kullanimi/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lokasyon izni";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -480,6 +485,7 @@
 				DEVELOPMENT_TEAM = UKXQYP47Y9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreLocationFramework_Kullanimi/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Lokasyon izni";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
