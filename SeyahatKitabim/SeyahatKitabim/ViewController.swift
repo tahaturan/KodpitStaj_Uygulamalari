@@ -8,6 +8,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
 
 class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDelegate{
     
@@ -21,6 +22,8 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
     
     var locationManager = CLLocationManager()
     
+    var chosenLatitude:Double = Double()
+    var chosenLongitude:Double = Double()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +48,9 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
            let touchPoint = gestureRecognizer.location(in: self.mapView)
            let touchCoordinates = self.mapView.convert(touchPoint, toCoordinateFrom: self.mapView)
            
+           chosenLatitude = touchCoordinates.latitude
+           chosenLongitude = touchCoordinates.longitude
+           
            let annotation = MKPointAnnotation()
            annotation.coordinate = touchCoordinates
            annotation.title = nameTextField.text
@@ -67,6 +73,29 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
         mapView.setRegion(region, animated: true)
       
     }
+    
+    
+    @IBAction func saveButton(_ sender: Any) {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let contex = appDelegate.persistentContainer.viewContext
+        
+        let newPlace = NSEntityDescription.insertNewObject(forEntityName: "Places", into: contex)
+        
+        newPlace.setValue(nameTextField.text, forKey: "title")
+        newPlace.setValue(commentTextField.text, forKey: "subtitle")
+        newPlace.setValue(chosenLatitude, forKey: "latitude")
+        newPlace.setValue(chosenLongitude, forKey: "longitude")
+        newPlace.setValue(UUID(), forKey: "id")
+        
+        do {
+            try contex.save()
+            print("basarili")
+        } catch  {
+            print(error)
+        }
+    }
+    
 
 
 }
