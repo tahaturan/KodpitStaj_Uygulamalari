@@ -24,6 +24,9 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
     
     var chosenLatitude:Double = Double()
     var chosenLongitude:Double = Double()
+    
+    var selectedTitle = ""
+    var selectedID : UUID?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,18 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
         let gestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(chooseLocation(gestureRecognizer:)))
         gestureRecognizer.minimumPressDuration = 3
         mapView.addGestureRecognizer(gestureRecognizer)
+        
+        
+        if selectedTitle != ""{
+            //CoreData cekme islemi
+            
+            let stringUUID = selectedID!.uuidString
+            
+            
+        }else{
+            //add new data
+        }
+        
         
     }
     

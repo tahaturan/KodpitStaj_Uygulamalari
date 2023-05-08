@@ -14,6 +14,9 @@ class TableViewController: UIViewController {
     var titleArray = [String]()
     var idArray = [UUID]()
     
+    var chosenTitle = ""
+    var chosenID:UUID?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,7 +85,24 @@ extension TableViewController:UITableViewDelegate , UITableViewDataSource{
     }
     
   @objc  func addButton()  {
+      chosenTitle = ""
         performSegue(withIdentifier: "toViewController", sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenTitle = titleArray[indexPath.row]
+        chosenID = idArray[indexPath.row]
+        performSegue(withIdentifier: "toViewController", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toViewController"{
+            let destinationVC = segue.destination as! ViewController
+            
+            destinationVC.selectedTitle = chosenTitle
+            destinationVC.selectedID = chosenID
+            
+        }
     }
     
 }
