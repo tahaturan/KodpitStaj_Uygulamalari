@@ -193,6 +193,31 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
         navigationController?.popViewController(animated: true)
     }
     
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if selectedTitle != ""{
+            
+            let requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
+            
+            CLGeocoder().reverseGeocodeLocation(requestLocation) { placeMarks , error in
+                //Closure
+                if let placeMark  = placeMarks {
+                    if placeMark.count > 0 {
+                        
+                        let newPlaceMark = MKPlacemark(placemark: placeMark[0])
+                        let item = MKMapItem(placemark: newPlaceMark)
+                        item.name = self.annotationTitle
+                        
+                        
+                        item.openInMaps()
+                    }
+                }
+                
+       
+            }
+            
+        }
+    }
+    
 
 
 }
