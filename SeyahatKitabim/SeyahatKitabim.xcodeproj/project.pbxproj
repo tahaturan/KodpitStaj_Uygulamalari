@@ -17,6 +17,7 @@
 		5F32EDCF2A08D72C0062F402 /* SeyahatKitabimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32EDCE2A08D72C0062F402 /* SeyahatKitabimTests.swift */; };
 		5F32EDD92A08D72C0062F402 /* SeyahatKitabimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32EDD82A08D72C0062F402 /* SeyahatKitabimUITests.swift */; };
 		5F32EDDB2A08D72C0062F402 /* SeyahatKitabimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32EDDA2A08D72C0062F402 /* SeyahatKitabimUITestsLaunchTests.swift */; };
+		5F32EDE82A08E9500062F402 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32EDE72A08E9500062F402 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5F32EDD42A08D72C0062F402 /* SeyahatKitabimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeyahatKitabimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F32EDD82A08D72C0062F402 /* SeyahatKitabimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeyahatKitabimUITests.swift; sourceTree = "<group>"; };
 		5F32EDDA2A08D72C0062F402 /* SeyahatKitabimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeyahatKitabimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F32EDE72A08E9500062F402 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				5F32EDB42A08D72B0062F402 /* AppDelegate.swift */,
 				5F32EDB62A08D72B0062F402 /* SceneDelegate.swift */,
 				5F32EDB82A08D72B0062F402 /* ViewController.swift */,
+				5F32EDE72A08E9500062F402 /* TableViewController.swift */,
 				5F32EDBA2A08D72B0062F402 /* Main.storyboard */,
 				5F32EDC02A08D72C0062F402 /* Assets.xcassets */,
 				5F32EDC22A08D72C0062F402 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				5F32EDB92A08D72B0062F402 /* ViewController.swift in Sources */,
 				5F32EDB52A08D72B0062F402 /* AppDelegate.swift in Sources */,
 				5F32EDB72A08D72B0062F402 /* SceneDelegate.swift in Sources */,
+				5F32EDE82A08E9500062F402 /* TableViewController.swift in Sources */,
 				5F32EDBF2A08D72B0062F402 /* SeyahatKitabim.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
