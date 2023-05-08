@@ -144,6 +144,30 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
       
     }
     
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation is MKUserLocation{
+            return nil
+        }
+        
+        let reuseId = "myAnnotatiton"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKMarkerAnnotationView
+        
+        if pinView == nil {
+            pinView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView?.canShowCallout = true
+            pinView?.tintColor = .cyan
+            
+            let button = UIButton(type: UIButton.ButtonType.detailDisclosure)
+            pinView?.rightCalloutAccessoryView = button
+            
+        }else{
+            pinView?.annotation = annotation
+        }
+        
+        return pinView
+    }
+    
     
     @IBAction func saveButton(_ sender: Any) {
         
@@ -164,6 +188,9 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
         } catch  {
             print(error)
         }
+        
+        NotificationCenter.default.post(name: NSNotification.Name("newPlace"), object: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 
