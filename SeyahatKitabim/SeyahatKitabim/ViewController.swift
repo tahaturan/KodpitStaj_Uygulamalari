@@ -13,6 +13,12 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
     
     @IBOutlet weak var mapView: MKMapView!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var commentTextField: UITextField!
+    
+    
+    
     var locationManager = CLLocationManager()
     
 
@@ -41,8 +47,8 @@ class ViewController: UIViewController, MKMapViewDelegate  , CLLocationManagerDe
            
            let annotation = MKPointAnnotation()
            annotation.coordinate = touchCoordinates
-           annotation.title = "New Annotation"
-           annotation.subtitle = "Travel Book"
+           annotation.title = nameTextField.text
+           annotation.subtitle = commentTextField.text
            self.mapView.addAnnotation(annotation)
        }
        
