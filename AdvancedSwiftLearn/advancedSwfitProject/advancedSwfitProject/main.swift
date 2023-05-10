@@ -11,7 +11,7 @@ let classJames = MusicianClass(name: "Jamas", age: 44, instrument: "guitar")
 //print(classJames.age)
 
 //MARK: class ile struct in farki struct init istemiyor bizden otomatik olarak girdigimiz degerleri init ediyor
-let structJames = MusicianStruct(name: "James", age: 44, instrument: "guitar")
+var structJames = MusicianStruct(name: "James", age: 44, instrument: "guitar")
 //print(structJames.age)
 
 
@@ -48,4 +48,12 @@ print("--------------")
 print(classJames.age)
 print(structJames.age)
 
+print("------------------Function vs Mutanding Function----------------")
 
+print(classJames.age)
+classJames.happyBirthDay()
+print(classJames.age)
+
+print("StructJames Age: \(structJames.age)")
+structJames.happyBirthDay()
+print("StructJames Age: \(structJames.age)")
