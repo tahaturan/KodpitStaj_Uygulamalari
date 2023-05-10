@@ -57,3 +57,21 @@ print(classJames.age)
 print("StructJames Age: \(structJames.age)")
 structJames.happyBirthDay()
 print("StructJames Age: \(structJames.age)")
+
+print("--------------------TUPLE-------------------")
+
+let myTuple = (1,3)
+print(myTuple.0)
+
+let myTuple2 = (1,3,5)
+print(myTuple2.2)
+
+let myTuple3 = ("taha" , 100)
+print(myTuple3.0)
+
+let myTuple4 = (10,[10,20,30])
+
+print(myTuple4.1[1])
+
+let myTuple5 = (name:"Taha" , age:25)
+print(myTuple5.age)
