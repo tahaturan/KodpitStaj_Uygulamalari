@@ -75,3 +75,28 @@ print(myTuple4.1[1])
 
 let myTuple5 = (name:"Taha" , age:25)
 print(myTuple5.age)
+
+print("-------------------- Guard Let vs If let -----------------")
+
+let myString = "5"
+
+func convertToInteger(stringInput:String) -> Int {
+    
+    guard let myInteger = Int(stringInput) else { return 0 }
+    
+    return myInteger
+    
+}
+
+func convertToIntegerIfLet(stringInput:String) -> Int  {
+    
+    if let myInteger = Int(stringInput) {
+        return myInteger
+    }else{
+        return 0
+    }
+    
+}
+
+print(convertToIntegerIfLet(stringInput: myString))
+print(convertToInteger(stringInput: myString))
