@@ -45,6 +45,7 @@ class CryptoViewController: UIViewController , AnyView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .cyan
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
@@ -70,7 +71,7 @@ class CryptoViewController: UIViewController , AnyView {
     }
     
     func update(with error: String) {
-        <#code#>
+        print("deneme")
     }
 
 }
