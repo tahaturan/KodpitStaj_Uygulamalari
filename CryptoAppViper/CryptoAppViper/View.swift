@@ -71,7 +71,12 @@ class CryptoViewController: UIViewController , AnyView {
     }
     
     func update(with error: String) {
-        print("deneme")
+        DispatchQueue.main.async {
+            self.cryptos = []
+            self.tableView.isHidden = true
+            self.messageLabel.text = error
+            self.messageLabel.isHidden = false
+        }
     }
 
 }
@@ -85,8 +90,15 @@ extension CryptoViewController : UITableViewDelegate , UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let crypto = cryptos[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        content.text = crypto.currency
+        content.secondaryText = crypto.price
+        cell.contentConfiguration = content
+        cell.backgroundColor = .cyan
         
-        return UITableViewCell()
+        return cell
     }
     
     
