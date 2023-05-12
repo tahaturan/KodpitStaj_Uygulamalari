@@ -6,3 +6,21 @@
 //
 
 import Foundation
+// Kordinasyon Bolumu
+// Class , Protocol
+// EntryPoint i belirtiriz tabi olusturupda
+
+protocol AnyRouter {
+    static func startExecution() -> AnyRouter
+}
+
+class CryptoRouter: AnyRouter {
+    
+    static func startExecution() -> AnyRouter {
+        let router = CryptoRouter()
+        
+        
+        return router
+    }
+    
+}

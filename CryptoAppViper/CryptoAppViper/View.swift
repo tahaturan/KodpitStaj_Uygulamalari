@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import UIKit
+
+// etkilesimde oldugu bolum -> Presenter
+// Class , Protocol
+// ViewController
+
+protocol AnyView {
+    
+}
+
+class CryptoViewController: UIViewController , AnyView {
+    
+}

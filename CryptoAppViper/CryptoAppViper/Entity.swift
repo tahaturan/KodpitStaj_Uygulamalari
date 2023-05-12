@@ -6,3 +6,9 @@
 //
 
 import Foundation
+// Model bolumu Struct
+
+struct Crypto : Decodable {
+    let currency : String
+    let price: String
+}
