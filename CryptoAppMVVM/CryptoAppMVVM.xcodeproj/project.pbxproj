@@ -16,6 +16,7 @@
 		5FE598F92A0E2F1C00370A25 /* CryptoAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE598F82A0E2F1C00370A25 /* CryptoAppMVVMTests.swift */; };
 		5FE599032A0E2F1C00370A25 /* CryptoAppMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE599022A0E2F1C00370A25 /* CryptoAppMVVMUITests.swift */; };
 		5FE599052A0E2F1C00370A25 /* CryptoAppMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE599042A0E2F1C00370A25 /* CryptoAppMVVMUITestsLaunchTests.swift */; };
+		5FE599122A0E30DB00370A25 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE599112A0E30DB00370A25 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5FE598FE2A0E2F1C00370A25 /* CryptoAppMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE599022A0E2F1C00370A25 /* CryptoAppMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppMVVMUITests.swift; sourceTree = "<group>"; };
 		5FE599042A0E2F1C00370A25 /* CryptoAppMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FE599112A0E30DB00370A25 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5FE598EA2A0E2F1C00370A25 /* Assets.xcassets */,
 				5FE598EC2A0E2F1C00370A25 /* LaunchScreen.storyboard */,
 				5FE598EF2A0E2F1C00370A25 /* Info.plist */,
+				5FE599112A0E30DB00370A25 /* CryptoTableViewCell.swift */,
 			);
 			path = CryptoAppMVVM;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE599122A0E30DB00370A25 /* CryptoTableViewCell.swift in Sources */,
 				5FE598E62A0E2F1C00370A25 /* ViewController.swift in Sources */,
 				5FE598E22A0E2F1C00370A25 /* AppDelegate.swift in Sources */,
 				5FE598E42A0E2F1C00370A25 /* SceneDelegate.swift in Sources */,
