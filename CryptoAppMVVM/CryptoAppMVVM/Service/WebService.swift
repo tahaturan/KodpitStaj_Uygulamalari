@@ -21,7 +21,7 @@ class WebService{
                 
                 let cryptoList = try? JSONDecoder().decode([CryptoModel].self, from: data)
                 
-                print(cryptoList ?? "")
+                
                 
                 if let cryptoList = cryptoList {
                     completion(cryptoList)
