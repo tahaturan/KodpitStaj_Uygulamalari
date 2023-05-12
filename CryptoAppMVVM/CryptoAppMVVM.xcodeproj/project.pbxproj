@@ -19,6 +19,7 @@
 		5FE599122A0E30DB00370A25 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE599112A0E30DB00370A25 /* CryptoTableViewCell.swift */; };
 		5FE599172A0E326000370A25 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE599162A0E326000370A25 /* CryptoModel.swift */; };
 		5FE5991A2A0E33A600370A25 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE599192A0E33A600370A25 /* WebService.swift */; };
+		5FE5991C2A0E3E6700370A25 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE5991B2A0E3E6700370A25 /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5FE599112A0E30DB00370A25 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		5FE599162A0E326000370A25 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		5FE599192A0E33A600370A25 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		5FE5991B2A0E3E6700370A25 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		5FE599152A0E321200370A25 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5FE5991B2A0E3E6700370A25 /* CryptoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				5FE5991A2A0E33A600370A25 /* WebService.swift in Sources */,
 				5FE599122A0E30DB00370A25 /* CryptoTableViewCell.swift in Sources */,
 				5FE598E62A0E2F1C00370A25 /* ViewController.swift in Sources */,
+				5FE5991C2A0E3E6700370A25 /* CryptoViewModel.swift in Sources */,
 				5FE598E22A0E2F1C00370A25 /* AppDelegate.swift in Sources */,
 				5FE598E42A0E2F1C00370A25 /* SceneDelegate.swift in Sources */,
 				5FE599172A0E326000370A25 /* CryptoModel.swift in Sources */,
