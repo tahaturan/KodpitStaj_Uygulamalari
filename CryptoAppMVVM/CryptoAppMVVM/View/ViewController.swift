@@ -36,6 +36,8 @@ extension ViewController:UITableViewDataSource , UITableViewDelegate{
         
         cell.priceLabel.text = cryproViewModel?.price
         cell.currencyLabel.text = cryproViewModel?.name
+        cell.backgroundColor = indexPath.row % 2 == 0 ? .cyan:.link
+        
         
    
         
